@@ -1,0 +1,4 @@
+let link = document.querySelector(
+  "a[href=https://hips.hearstapps.com/hmg-prod/images/cute-cat-photos-1593441022.jpg]");
+link.textContent = "Image of the cat";
+document.body.appendChild(link);
