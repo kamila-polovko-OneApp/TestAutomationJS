@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homework7</title>
+</head>
+<body>
+    <script src="index.js"></script>
+    <p id ='text'>I learn JavaScript events!</p> 
+    <div>
+        <button onclick="changeCSS()">Change style!</button>
+        <button id="btn1" onclick="backgroundChange('blue')">Change background to blue</button>
+        <button id="btn2" ondblclick="backgroundChange('pink')">Change background to pink</button>
+        <button id="btn3" onmousedown="backgroundChange('brown')" onmouseup="backgroundChange('white')">Change background to brown and then - white</button>
+        <a id="link" href="#" onmouseover="backgroundChange('yellow')" onmouseout="backgroundChange('white')">Hover over me</a>
+    </div>
+    <select id="myChoice">
+        <option value="choice1">Element1</option>
+        <option value="choice2">Element2</option>
+        <option value="choice3">Element3</option>
+        <option value="choice4">Element4</option>
+        <option value="choice5">Element5</option>
+    </select>
+    <button id="deleteBtn" onclick="removeSelectedElement()">Delete Selected Element</button>
+    <button id="liveBtn" onclick="displayMessage()" onmouseover="mouseOver()" onmouseout="mouseOut()">Click on me!</button>
+    <div id="window">
+        <p id="width-window"></p>
+        <p id="height-window"></p>
+    </div>
+</body>
+</html>
