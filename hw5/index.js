@@ -66,27 +66,27 @@ student.showCourse();
 
 // task 4
 class Employee {
-  _experience = 1.2;
+  #experience = 1.2;
   constructor(fullName, dayRate, workingDays) {
     this.fullName = fullName;
     this.dayRate = dayRate;
     this.workingDays = workingDays;
   }
   set experience(value) {
-    return (this._experience = value);
+    return (this.#experience = value);
   }
   get experience() {
-    return this._experience;
+    return this.#experience;
   }
 
   showSalary() {
     return this.dayRate * this.workingDays;
   }
   showSalaryWithExperience() {
-    return this.showSalary * this._experience;
+    return this.showSalary * this.#experience;
   }
   showSalaryWithNewExperience() {
-    return this.showSalary() * this._experience;
+    return this.showSalary() * this.#experience;
   }
 }
 
@@ -117,24 +117,24 @@ console.log(employees);
 /*
 Monica Smith
 index.js:95 450
-index.js:97 675
+index.js:97 540
 index.js:100 Bill Black
 index.js:101 540
-index.js:103 810
+index.js:103 648
 index.js:106 Jack Bold
 index.js:107 440
-index.js:109 660
+index.js:109 528
 index.js:115 
 (3) [Employee, Employee, Employee]
 0
 : 
-Employee {_experience: 1.5, fullName: 'Monica Smith', dayRate: 18, workingDays: 25}
+Employee {fullName: 'Monica Smith', dayRate: 18, workingDays: 25, _experience: 1.5, #experience: 1.2}
 1
 : 
-Employee {_experience: 1.5, fullName: 'Bill Black', dayRate: 20, workingDays: 27}
+Employee {fullName: 'Bill Black', dayRate: 20, workingDays: 27, _experience: 1.5, #experience: 1.2}
 2
 : 
-Employee {_experience: 1.5, fullName: 'Jack Bold', dayRate: 22, workingDays: 20}
+Employee {fullName: 'Jack Bold', dayRate: 22, workingDays: 20, _experience: 1.5, #experience: 1.2}
 length
 : 
 3
