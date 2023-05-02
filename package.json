@@ -1,0 +1,14 @@
+{
+  "name": "testautomationjs",
+  "version": "1.0.0",
+  "description": "My homeworks related to the JavaScript for TA course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
